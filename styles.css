@@ -1,0 +1,271 @@
+#title{
+  background-color: black;
+
+}
+:root {
+  --border-color: #d1e3dd;
+}
+
+body{
+  font-family: "Arial";
+}
+
+#title{
+
+  color: #fff;
+}
+
+h1{
+
+  font-family: "Tangerine", sans-serif;
+  font-size: 4.5rem;
+  line-height: 1.5;
+
+}
+
+
+
+p{
+
+  font-family: "Arial-Bold";
+  font-size: 1.5rem;
+  color: grey;
+  padding-left: 15px;
+}
+
+.container-fluid{
+
+  padding: 3%, 15%, 7%;
+}
+
+
+/* Navigation Bar */
+
+.navbar{
+  padding-bottom: 4.5rem;
+}
+
+.navbar-brand{
+  font-family: 'Ubuntu';
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item{
+
+  padding: 0 18px;
+}
+
+.nav-link{
+  font-size: 1.2rem;
+}
+
+/* Download Button */
+
+.download-button{
+
+  margin: 5% 3% 3% 0
+}
+
+.title-image{
+
+  width: 50%;
+  border-radius: 52%;
+  float: right;
+  margin: 0 80px 0 15px;
+  border: 4px solid var(--border-color);
+  
+}
+
+/* portfolio */
+
+#portfolio{
+
+  background: #d1e3dd;
+  padding: 7% 15%;
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio-box{
+
+  text-align: center;
+  padding: 5%;
+}
+
+.portfolio-box h3{
+
+  font-weight: bold;
+}
+
+.icon{
+
+  color: black;
+  margin-bottom: 1rem;
+  transition: 0.5s;
+
+
+}
+
+.icon:hover{
+
+  color: darkcyan;
+  
+}
+
+/* Project */
+
+.contain{
+  background: black;
+  color: #fff;
+}
+.work-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.work{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.work img{
+
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+  
+  
+}
+
+.layer{
+
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0,0,0,0.6), darkcyan);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0, 40px;
+  text-align: center;
+  transition: height 0.5s;
+    
+}
+.layer p{
+  color: #fff;
+}
+.layer a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  
+}
+.work:hover img{
+  transform: scale(1.1);
+}
+.work:hover .layer{
+  height: 100%;
+}
+
+
+
+
+/* Contact Me */
+#contactme{
+  background: #d1e3dd;
+}
+.container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #d1e3dd;
+  border-radius: 10px;
+  
+}
+
+h1 {
+  text-align: center;
+}
+
+
+label {
+  font-size: 1.2em;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: darkcyan;
+}
+
+input[type="submit"]:focus {
+  outline: none;
+}
+
+textarea {
+  height: 150px;
+}
+
+.container .icon{
+
+  font-size: 1.5rem;
+  padding: 50px;
+  margin-left: 25px;
+  text-decoration: none;
+}
+
+
+/* responsive design */
+
+@media  screen and (max-width: 992px) {
+
+  .title-image{
+
+    padding-bottom: 20px;
+  }
+
+  .container{
+
+    width: fit-content;
+
+  }
+  .container h1{
+    font-size: 50px;
+  }
+  .container .icon{
+
+    
+    justify-content: center;
+    margin-left: -25px;
+  }
+
+  
+}
+
