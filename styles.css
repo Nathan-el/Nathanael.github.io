@@ -65,6 +65,7 @@ p{
 .download-button{
 
   margin: 5% 3% 3% 0
+  
 }
 
 .title-image{
@@ -72,7 +73,7 @@ p{
   width: 50%;
   border-radius: 52%;
   float: right;
-  margin: 0 80px 0 15px;
+  margin: 0 80px 25px 15px;
   border: 4px solid var(--border-color);
   
 }
