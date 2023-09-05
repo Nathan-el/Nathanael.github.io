@@ -1,6 +1,6 @@
 #title{
   background-color: black;
-
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
 }
 :root {
   --border-color: #d1e3dd;
@@ -8,6 +8,9 @@
 
 body{
   font-family: "Arial";
+  
+
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 #title{
